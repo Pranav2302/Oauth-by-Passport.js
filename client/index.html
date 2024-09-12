@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Signup</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container .input-box {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .login-container .input-box input {
+      width: 100%;
+      padding: 10px;
+      padding-left: 40px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .login-container .input-box i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aaa;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .login-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .login-container .divider {
+      text-align: center;
+      margin: 20px 0;
+      color: #aaa;
+    }
+
+    .login-container .google-btn {
+      background-color: #db4437;
+      color: white;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container .google-btn i {
+      margin-right: 10px;
+    }
+
+    .login-container .google-btn:hover {
+      background-color: #c23321;
+    }
+
+    .login-container p {
+      text-align: center;
+    }
+
+    .login-container a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login / Signup</h2>
+
+    <!-- Google Login Button -->
+    <a href="/auth/google">Login with Google</a>
+
+    <div class="divider">or</div>
+
+    <!-- Email Login -->
+    <form>
+      <div class="input-box">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" required>
+      </div>
+
+      <div class="input-box">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required>
+      </div>
+
+      <button type="submit">Login / Signup</button>
+    </form>
+
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+
+</body>
+</html>
